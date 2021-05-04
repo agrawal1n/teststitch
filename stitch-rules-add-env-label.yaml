@@ -9,6 +9,7 @@ spec:
     processor:
       - type: k8s.MacroFreemarkerAddLabels # example of using 'k8s.MacroFreemarkerAddLabels' macro as a processor
         description: "Using macro and context information for parameters from Deploy"
+        phase: PATCH
         parameters:
           application: "#{#ctx.getCurrentDeployedApplication().getName()}" 
           environment: "#{#ctx.getCurrentDeployedApplication().getEnvironment().getName()}"
