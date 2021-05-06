@@ -15,6 +15,6 @@ spec:
           type: overlay
         parameters:
           patch:
-            - op: add
+            - op: replace
               path: "/spec/containers/0/image"
               value: "#{'nginx:'+#ctx.getCurrentDeployedApplication().getName()}"
