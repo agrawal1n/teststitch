@@ -1,6 +1,6 @@
 kind: Rules
 metadata:
-  namespace: k8s-tutorial
+  namespace: default
 spec:
   - name: "k8s.StandardJavaSvcProd"
     description: "Standard configuration for Java FE application in K8s PROD"
