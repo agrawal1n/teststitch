@@ -17,4 +17,4 @@ spec:
           patch:
             - op: add
               path: "/spec/containers/0/image"
-              value: "#{'nginx:'}#{#ctx.getCurrentDeployedApplication().getName()}"
+              value: "#{'nginx:'}#{ctx.getCurrentDeployedApplication().getName()}"
