@@ -17,4 +17,4 @@ spec:
           patch:
             - op: replace
               path: "/spec/containers/0/image"
-              value: nginx:1.14.2
+              value: nginx:${params.application}
